@@ -31,34 +31,42 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="common.h" />
-		<Unit filename="fileext.c">
+		<Unit filename="collections/sortedlist.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="fileext.h" />
-		<Unit filename="fileop.c">
+		<Unit filename="collections/sortedlist.h" />
+		<Unit filename="collections/stack.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="fileop.h" />
+		<Unit filename="collections/stack.h" />
+		<Unit filename="core/common.h" />
+		<Unit filename="core/core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="core/core.h" />
+		<Unit filename="core/menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="core/menu.h" />
+		<Unit filename="core/prefix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="core/prefix.h" />
+		<Unit filename="extensions/fileext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="extensions/fileext.h" />
+		<Unit filename="extensions/memoryext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="extensions/memoryext.h" />
+		<Unit filename="extensions/stringext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="extensions/stringext.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="menu.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="menu.h" />
-		<Unit filename="sortedlist.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sortedlist.h" />
-		<Unit filename="stack.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="stack.h" />
-		<Unit filename="stringext.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="stringext.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
