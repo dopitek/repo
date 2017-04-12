@@ -11,12 +11,4 @@ typedef struct
     bool valid;
 } model;
 
-typedef struct word
-{
-    char* text;
-    struct word* next;
-} word;
-
-
-
 #endif

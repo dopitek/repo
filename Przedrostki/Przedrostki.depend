@@ -194,59 +194,134 @@
 	<ctype.h>
 	"stringext.h"
 
-1491989822 source:c:\repo\przedrostki\fileext.c
-	<stdio.h>
-	"fileext.h"
-
-1491989822 c:\repo\przedrostki\fileext.h
-
-1491989822 source:c:\repo\przedrostki\menu.c
+1491991136 source:c:\repo\przedrostki\fileext.c
 	<stdio.h>
 	<stdlib.h>
 	"fileext.h"
+
+1491991756 c:\repo\przedrostki\fileext.h
+
+1491991179 source:c:\repo\przedrostki\menu.c
+	<stdio.h>
+	<stdlib.h>
 	"menu.h"
+	"fileext.h"
 
 1491989822 c:\repo\przedrostki\menu.h
 	"common.h"
 
-1491989822 c:\repo\przedrostki\common.h
+1491992766 c:\repo\przedrostki\common.h
 	<stdbool.h>
 
-1491989822 source:c:\repo\przedrostki\sortedlist.c
+1491990371 source:c:\repo\przedrostki\sortedlist.c
 	<stdlib.h>
 	<string.h>
 	<stdio.h>
 	"sortedlist.h"
 	"stringext.h"
 
-1491989822 c:\repo\przedrostki\sortedlist.h
+1491990721 c:\repo\przedrostki\sortedlist.h
 	"common.h"
 
-1491989822 c:\repo\przedrostki\stringext.h
+1491991536 c:\repo\przedrostki\stringext.h
+	"stack.h"
 
-1491989822 source:c:\repo\przedrostki\stack.c
+1491990281 source:c:\repo\przedrostki\stack.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"stack.h"
 
-1491989822 c:\repo\przedrostki\stack.h
+1491990280 c:\repo\przedrostki\stack.h
 	"common.h"
 
-1491989822 source:c:\repo\przedrostki\stringext.c
+1491991561 source:c:\repo\przedrostki\stringext.c
 	<string.h>
 	<stdlib.h>
 	<ctype.h>
 	"stringext.h"
 
-1491989885 source:c:\repo\przedrostki\main.c
+1491990964 source:c:\repo\przedrostki\main.c
 	<stdio.h>
 	<stdlib.h>
-	<ctype.h>
-	"sortedlist.h"
-	"fileop.h"
+	"core.h"
 
 1491989822 c:\repo\przedrostki\fileop.h
 	"common.h"
 	"stack.h"
+
+1491990632 source:c:\repo\przedrostki\fileop.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileop.h"
+	"fileext.h"
+	"sortedlist.h"
+	"stack.h"
+	"stringext.h"
+
+1491992620 source:c:\repo\przedrostki\core.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"core.h"
+	"prefix.h"
+	"collections\sortedlist.h"
+	"collections\stack.h"
+	"extensions\stringext.h"
+	"extensions\fileext.h"
+
+1491992397 c:\repo\przedrostki\core.h
+	"common.h"
+	"collections/stack.h"
+
+1491992306 source:c:\repo\przedrostki\collections\sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+	"../extensions/stringext.h"
+
+1491992279 c:\repo\przedrostki\collections\sortedlist.h
+	"../common.h"
+
+1491992593 c:\repo\przedrostki\extensions\stringext.h
+	"../collections/stack.h"
+
+1491992375 c:\repo\przedrostki\collections\stack.h
+	"../common.h"
+
+1491990281 source:c:\repo\przedrostki\collections\stack.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stack.h"
+
+1491991772 source:c:\repo\przedrostki\extensions\fileext.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"memoryext.h"
+
+1491991756 c:\repo\przedrostki\extensions\fileext.h
+
+1491991719 c:\repo\przedrostki\extensions\memoryext.h
+	<stdlib.h>
+
+1491991681 source:c:\repo\przedrostki\extensions\memoryext.c
+	"memoryext.h"
+
+1491992593 source:c:\repo\przedrostki\extensions\stringext.c
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"stringext.h"
+
+1491992650 c:\repo\przedrostki\prefix.h
+	"collections/stack.h"
+
+1491992691 source:c:\repo\przedrostki\prefix.c
+	<stdlib.h>
+	<ctype.h>
+	"prefix.h"
 

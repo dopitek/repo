@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "fileext.h"
 #include "menu.h"
+#include "fileext.h"
 
-bool validateInput(model settings)
+
+bool validate_input(model settings)
 {
     bool result = true;
     if (settings.prefix == NULL)
@@ -18,7 +19,7 @@ bool validateInput(model settings)
     }
     else
     {
-        if (!fileExists(settings.in_filename))
+        if (!file_exists(settings.in_filename))
         {
             printf("Prafix not provided\n");
             result = false;
@@ -31,7 +32,7 @@ bool validateInput(model settings)
     }
     else
     {
-        if (!fileExists(settings.in_filename))
+        if (!file_exists(settings.in_filename))
         {
             printf("Prafix not provided\n");
             result = false;
@@ -58,7 +59,7 @@ model initialize(int argc, char ** argv)
         }
     }
 
-    settings.valid = validateInput(settings);
+    settings.valid = validate_input(settings);
     return settings;
 }
 
