@@ -1,0 +1,196 @@
+# depslib dependency file v1.0
+1490887844 source:c:\users\darek\onedrive\studia\pk\przedrostki\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"fileop.h"
+
+1491837647 
+
+1490887790 c:\users\darek\onedrive\studia\pk\przedrostki\menu.h
+
+1490887790 c:\users\darek\onedrive\studia\pk\przedrostki\fileop.h
+
+1490912770 source:d:\onedrive\studia\pk\przedrostki\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sortedlist.h"
+	"fileop.h"
+
+1490902066 d:\onedrive\studia\pk\przedrostki\menu.h
+	"common.h"
+
+1490909027 d:\onedrive\studia\pk\przedrostki\fileop.h
+	"common.h"
+
+1490901828 source:d:\onedrive\studia\pk\przedrostki\fileext.c
+	<stdio.h>
+	"fileext.h"
+
+1490901828 "
+
+1490903978 d:\onedrive\studia\pk\przedrostki\common.h
+	<stdbool.h>
+
+1491837423 >
+
+1490901707 d:\onedrive\studia\pk\przedrostki\fileext.h
+
+1490902227 source:d:\onedrive\studia\pk\przedrostki\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"menu.h"
+
+1490912441 source:d:\onedrive\studia\pk\przedrostki\sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+	"stringext.h"
+
+1491837852 .h"
+
+1490905433 d:\onedrive\studia\pk\przedrostki\sortedlist.h
+	"common.h"
+
+1490912633 source:d:\onedrive\studia\pk\przedrostki\fileop.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileop.h"
+	"sortedlist.h"
+	"stringext.h"
+
+1490912472 d:\onedrive\studia\pk\przedrostki\stringext.h
+
+1490912499 source:d:\onedrive\studia\pk\przedrostki\stringext.c
+	<ctype.h>
+	"stringext.h"
+
+1490901828 source:c:\onedrive\studia\pk\przedrostki\fileext.c
+	<stdio.h>
+	"fileext.h"
+
+1491837454 c:\onedrive\studia\pk\przedrostki\fileext.h
+
+1491837454 source:c:\onedrive\studia\pk\przedrostki\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"menu.h"
+
+1491837454 c:\onedrive\studia\pk\przedrostki\menu.h
+	"common.h"
+
+1491837423 c:\onedrive\studia\pk\przedrostki\common.h
+	<stdbool.h>
+
+1491412754 source:c:\onedrive\studia\pk\przedrostki\sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+	"stringext.h"
+
+1491837946 c:\onedrive\studia\pk\przedrostki\sortedlist.h
+	"common.h"
+
+1491837454 c:\onedrive\studia\pk\przedrostki\stringext.h
+
+1491837614 source:c:\onedrive\studia\pk\przedrostki\stringext.c
+	<ctype.h>
+	"stringext.h"
+
+1491837952 source:c:\onedrive\studia\pk\przedrostki\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sortedlist.h"
+	"fileop.h"
+
+1491837810 c:\onedrive\studia\pk\przedrostki\fileop.h
+	"common.h"
+	"stack.h"
+
+1491837852 source:c:\onedrive\studia\pk\przedrostki\fileop.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileop.h"
+	"sortedlist.h"
+	"stack.h"
+	"stringext.h"
+
+1491837423 c:\onedrive\studia\pk\przedrostki\stack.h
+	"common.h"
+
+1491837647 source:c:\onedrive\studia\pk\przedrostki\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1490905428 source:/home/dopitek/Przedrostki/fileext.c
+	<stdio.h>
+	"fileext.h"
+
+1491841056 /home/dopitek/Przedrostki/fileext.h
+
+1491925409 source:/home/dopitek/Przedrostki/sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+	"stringext.h"
+
+1491925451 /home/dopitek/Przedrostki/sortedlist.h
+	"common.h"
+
+1491841024 /home/dopitek/Przedrostki/common.h
+	<stdbool.h>
+
+1491841056 /home/dopitek/Przedrostki/stringext.h
+
+1491925682 source:/home/dopitek/Przedrostki/fileop.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileop.h"
+	"sortedlist.h"
+	"stack.h"
+	"stringext.h"
+
+1491925475 /home/dopitek/Przedrostki/fileop.h
+	"common.h"
+	"stack.h"
+
+1491857989 /home/dopitek/Przedrostki/stack.h
+	"common.h"
+
+1491925494 source:/home/dopitek/Przedrostki/main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"sortedlist.h"
+	"fileop.h"
+
+1491841056 source:/home/dopitek/Przedrostki/menu.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"menu.h"
+
+1491841056 /home/dopitek/Przedrostki/menu.h
+	"common.h"
+
+1491922536 source:/home/dopitek/Przedrostki/stack.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stack.h"
+
+1491892146 source:/home/dopitek/Przedrostki/stringext.c
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"stringext.h"
+
