@@ -29,7 +29,6 @@ char* pop(stack** head)
         temp = *head;
         object = calloc(strlen(temp->object)+1, 1);
         strcpy(object, temp->object);
-        //object = temp->object;
         (*head) = (*head)->next;
         free(temp->object);
         free(temp);

@@ -6,7 +6,7 @@
 
 int main(int argc, char** argv)
 {
-    //tolower(4845);
+
     read("test.txt", "m");
 
 
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
         //printf("%s\n", results->text);
         results = results->next;
     }*/
-    //destroy_list(results);
+
 
     return 0;
 }

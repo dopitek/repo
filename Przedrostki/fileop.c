@@ -48,9 +48,10 @@ stack* parse_line(char *line)
     pch = strtok (line," ,.:\r!?\"");
     while (pch != NULL)
     {
-        if(pch[0]!='\0');
-             push(&result, pch);
-
+        if(pch[0]!='\0')
+        {
+            push(&result, pch);
+        }
         pch = strtok (NULL, " ,.:\r!?\"");
     }
     return result;
@@ -102,7 +103,6 @@ void read(char * filename, char * prefix)
     }
     print_list(result3);
     destroy_list(result3);
-    //return result3;
 }
 
 

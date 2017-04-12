@@ -20,8 +20,6 @@ int has_prefix_ignore_case(char const *text, char const *prefix)
 int strcmp_ignore_case(char const *a, char const *b)
 {
     for (;; a++, b++) {
-//        if (!*a) return -1;
-//        if (!*b) return 1;
         int d = tolower(*a) - tolower(*b);
         if (d != 0 || !*a)
             return d;

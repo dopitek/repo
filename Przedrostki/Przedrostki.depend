@@ -194,3 +194,59 @@
 	<ctype.h>
 	"stringext.h"
 
+1491989822 source:c:\repo\przedrostki\fileext.c
+	<stdio.h>
+	"fileext.h"
+
+1491989822 c:\repo\przedrostki\fileext.h
+
+1491989822 source:c:\repo\przedrostki\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"menu.h"
+
+1491989822 c:\repo\przedrostki\menu.h
+	"common.h"
+
+1491989822 c:\repo\przedrostki\common.h
+	<stdbool.h>
+
+1491989822 source:c:\repo\przedrostki\sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+	"stringext.h"
+
+1491989822 c:\repo\przedrostki\sortedlist.h
+	"common.h"
+
+1491989822 c:\repo\przedrostki\stringext.h
+
+1491989822 source:c:\repo\przedrostki\stack.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stack.h"
+
+1491989822 c:\repo\przedrostki\stack.h
+	"common.h"
+
+1491989822 source:c:\repo\przedrostki\stringext.c
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"stringext.h"
+
+1491989885 source:c:\repo\przedrostki\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"sortedlist.h"
+	"fileop.h"
+
+1491989822 c:\repo\przedrostki\fileop.h
+	"common.h"
+	"stack.h"
+
