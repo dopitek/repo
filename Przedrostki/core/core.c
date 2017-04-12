@@ -3,10 +3,10 @@
 #include <string.h>
 #include "core.h"
 #include "prefix.h"
-#include "collections\sortedlist.h"
-#include "collections\stack.h"
-#include "extensions\stringext.h"
-#include "extensions\fileext.h"
+#include "../collections\sortedlist.h"
+#include "../collections\stack.h"
+#include "../extensions\stringext.h"
+#include "../extensions\fileext.h"
 
 void read(char * filename, char * prefix)
 {
@@ -30,7 +30,7 @@ void read(char * filename, char * prefix)
             dealloc_stack(result);
             while((element = pop(&result2))!= NULL)
             {
-                    add_element(result3, element);
+                    add_element(result3, element, strcmp_ignore_case);
             }
             dealloc_stack(result2);
             free(line);

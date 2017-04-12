@@ -1,8 +1,6 @@
 #ifndef STACK_H_INCLUDED
 #define STACK_H_INCLUDED
 
-#include "../common.h"
-
 typedef struct stack
 {
     char* object;

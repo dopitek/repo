@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "sortedlist.h"
-#include "../extensions/stringext.h"
 
 
 sorted_list* initialize_list()
@@ -12,18 +11,18 @@ sorted_list* initialize_list()
     return head;
 }
 
-void add_element(sorted_list* head, char* text)
+void add_element(sorted_list* head, char* text, int (*comparer)(const char*, const char*))
 {
     sorted_list* temp = head;
     sorted_list* new_element;
 
     if (temp->next != NULL)
     {
-        while(temp->next != NULL && strcmp_ignore_case(temp->next->text, text) <0 )
+        while(temp->next != NULL && comparer(temp->next->text, text) <0 )
             temp = temp->next;
     }
 
-    if (temp->next == NULL || strcmp_ignore_case(temp->next->text, text) != 0)
+    if (temp->next == NULL || comparer(temp->next->text, text) != 0)
     {
         new_element = (sorted_list*)malloc(sizeof(sorted_list));
         new_element->text = text;

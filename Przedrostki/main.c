@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "core.h"
+#include "core/core.h"
 
 int main(int argc, char** argv)
 {
