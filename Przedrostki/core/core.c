@@ -3,10 +3,10 @@
 #include <string.h>
 #include "core.h"
 #include "prefix.h"
-#include "../collections\sortedlist.h"
-#include "../collections\stack.h"
-#include "../extensions\stringext.h"
-#include "../extensions\fileext.h"
+#include "../collections/sortedlist.h"
+#include "../collections/stack.h"
+#include "../extensions/stringext.h"
+#include "../extensions/fileext.h"
 
 void read(char * filename, char * prefix)
 {
