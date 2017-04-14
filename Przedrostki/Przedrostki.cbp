@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="-i test.txt -o out.txt -p me" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -39,11 +40,18 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="collections/stack.h" />
+		<Unit filename="core/common.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="core/common.h" />
 		<Unit filename="core/core.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="core/core.h" />
+		<Unit filename="core/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="core/error.h" />
 		<Unit filename="core/menu.c">
 			<Option compilerVar="CC" />
 		</Unit>

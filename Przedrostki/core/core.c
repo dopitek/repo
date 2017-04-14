@@ -8,7 +8,7 @@
 #include "../extensions/stringext.h"
 #include "../extensions/fileext.h"
 
-void read(char * filename, char * prefix)
+void process(model model_instance)
 {
     FILE* file;
     char* line;
@@ -20,13 +20,13 @@ void read(char * filename, char * prefix)
     char* delimiter = " ,.:\r!?\"";
 
 
-    if ((file = fopen(filename, "r")) != NULL)
+    if ((file = fopen(model_instance.in_filename, "r")) != NULL)
     {
         while(!feof(file))
         {
             line = read_line(file);
             result = split(line, delimiter);
-            result2 = select_many_with_prefix(&result, prefix);
+            result2 = select_many_with_prefix(&result, model_instance.prefix);
             dealloc_stack(result);
             while((element = pop(&result2))!= NULL)
             {

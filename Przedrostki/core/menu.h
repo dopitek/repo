@@ -3,6 +3,6 @@
 
 #include "common.h"
 
-model initialize(int argc, char ** argv);
+int menu(int argc, char ** argv, model *model_instance);
 
 #endif

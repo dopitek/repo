@@ -325,3 +325,90 @@
 	<ctype.h>
 	"prefix.h"
 
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\collections\sortedlist.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"sortedlist.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\collections\sortedlist.h
+
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\collections\stack.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"stack.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\collections\stack.h
+
+1492199796 source:c:\users\darek\desktop\repo\przedrostki\core\common.c
+	<stdlib.h>
+	"common.h"
+
+1492199785 c:\users\darek\desktop\repo\przedrostki\core\common.h
+	<stdbool.h>
+
+1492199095 source:c:\users\darek\desktop\repo\przedrostki\core\core.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"core.h"
+	"prefix.h"
+	"../collections/sortedlist.h"
+	"../collections/stack.h"
+	"../extensions/stringext.h"
+	"../extensions/fileext.h"
+
+1492199053 c:\users\darek\desktop\repo\przedrostki\core\core.h
+	"common.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\core\prefix.h
+	"../collections/stack.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\extensions\stringext.h
+	"../collections/stack.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\extensions\fileext.h
+
+1492200830 source:c:\users\darek\desktop\repo\przedrostki\core\error.c
+	"error.h"
+
+1492201901 c:\users\darek\desktop\repo\przedrostki\core\error.h
+
+1492202232 source:c:\users\darek\desktop\repo\przedrostki\core\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+	"error.h"
+	"../extensions/fileext.h"
+
+1492199679 c:\users\darek\desktop\repo\przedrostki\core\menu.h
+	"common.h"
+
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\core\prefix.c
+	<stdlib.h>
+	<ctype.h>
+	"prefix.h"
+
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\extensions\fileext.c
+	<stdio.h>
+	<stdlib.h>
+	"fileext.h"
+	"memoryext.h"
+
+1492198534 c:\users\darek\desktop\repo\przedrostki\extensions\memoryext.h
+	<stdlib.h>
+
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\extensions\memoryext.c
+	"memoryext.h"
+
+1492198534 source:c:\users\darek\desktop\repo\przedrostki\extensions\stringext.c
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	"stringext.h"
+
+1492199811 source:c:\users\darek\desktop\repo\przedrostki\main.c
+	"core/menu.h"
+	"core/core.h"
+
