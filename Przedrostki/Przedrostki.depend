@@ -346,10 +346,10 @@
 	<stdlib.h>
 	"common.h"
 
-1492204986 c:\users\darek\desktop\repo\przedrostki\core\common.h
+1492207620 c:\users\darek\desktop\repo\przedrostki\core\common.h
 	<stdbool.h>
 
-1492206901 source:c:\users\darek\desktop\repo\przedrostki\core\core.c
+1492207561 source:c:\users\darek\desktop\repo\przedrostki\core\core.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -377,7 +377,7 @@
 
 1492203727 c:\users\darek\desktop\repo\przedrostki\core\error.h
 
-1492207014 source:c:\users\darek\desktop\repo\przedrostki\core\menu.c
+1492207508 source:c:\users\darek\desktop\repo\przedrostki\core\menu.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -385,7 +385,7 @@
 	"resources.h"
 	"../extensions/fileext.h"
 
-1492206975 c:\users\darek\desktop\repo\przedrostki\core\menu.h
+1492207485 c:\users\darek\desktop\repo\przedrostki\core\menu.h
 	"common.h"
 
 1492198534 source:c:\users\darek\desktop\repo\przedrostki\core\prefix.c
@@ -393,7 +393,7 @@
 	<ctype.h>
 	"prefix.h"
 
-1492198534 source:c:\users\darek\desktop\repo\przedrostki\extensions\fileext.c
+1492207632 source:c:\users\darek\desktop\repo\przedrostki\extensions\fileext.c
 	<stdio.h>
 	<stdlib.h>
 	"fileext.h"
@@ -411,7 +411,7 @@
 	<ctype.h>
 	"stringext.h"
 
-1492207096 source:c:\users\darek\desktop\repo\przedrostki\main.c
+1492207515 source:c:\users\darek\desktop\repo\przedrostki\main.c
 	"core/menu.h"
 	"core/core.h"
 

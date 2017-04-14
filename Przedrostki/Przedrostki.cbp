@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-i test.txt -o out.txt -p me" />
+				<Option parameters="-i test.txt -o outttt.txt -p pr" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -48,10 +48,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="core/core.h" />
-		<Unit filename="core/error.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="core/error.h" />
 		<Unit filename="core/menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -60,6 +56,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="core/prefix.h" />
+		<Unit filename="core/resources.h" />
 		<Unit filename="extensions/fileext.c">
 			<Option compilerVar="CC" />
 		</Unit>
