@@ -3,43 +3,49 @@
 #include <string.h>
 #include "core.h"
 #include "prefix.h"
-#include "../collections/sortedlist.h"
+#include "resources.h"
 #include "../collections/stack.h"
 #include "../extensions/stringext.h"
 #include "../extensions/fileext.h"
 
-void process(model model_instance)
+void process(model model_t)
 {
-    FILE* file;
+    FILE* file_read;
     char* line;
-    char* element;
+    sorted_list* sorted_words_with_prefix;
 
-    stack* result;
-    stack* result2;
-    sorted_list* result3 = initialize_list();
-    char* delimiter = " ,.:\r!?\"";
-
-
-    if ((file = fopen(model_instance.in_filename, "r")) != NULL)
+    if ((file_read = fopen(model_t.in_filename, "r")) != NULL)
     {
-        while(!feof(file))
+        sorted_words_with_prefix = initialize_list();
+        while(!feof(file_read))
         {
-            line = read_line(file);
-            result = split(line, delimiter);
-            result2 = select_many_with_prefix(&result, model_instance.prefix);
-            dealloc_stack(result);
-            while((element = pop(&result2))!= NULL)
-            {
-                    add_element(result3, element, strcmp_ignore_case);
-            }
-            dealloc_stack(result2);
-            free(line);
+            line = read_line(file_read);
+            process_line(line, model_t.prefix, sorted_words_with_prefix);
         }
+        save_list(sorted_words_with_prefix, model_t.out_filename);
+        destroy_list(sorted_words_with_prefix);
+        fclose(file_read);
     }
-    print_list(result3);
-    destroy_list(result3);
+    else
+    {
+        printf("%s\n", INPUT_FILE_CANNOT_BE_OPENED);
+    }
 }
 
+void process_line(char *line, char* prefix, sorted_list* results)
+{
+    stack* words;
+    stack* words_with_prefix;
+    char* element;
+    char* delimiter = " ,.:\r!?\"";
 
-
-
+    words = split(line, delimiter);
+    words_with_prefix = select_many_with_prefix(&words, prefix);
+    while((element = pop(&words_with_prefix))!= NULL)
+    {
+            add_element(results, element, strcmp_ignore_case);
+    }
+    dealloc_stack(words);
+    dealloc_stack(words_with_prefix);
+    free(line);
+}

@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "sortedlist.h"
+#include "../core/resources.h"
 
 
 sorted_list* initialize_list()
@@ -50,12 +51,22 @@ void destroy_list(sorted_list* head)
     free(temp);
 }
 
-void print_list(sorted_list* head)
+void save_list(sorted_list* head, char *file_name)
 {
+    FILE *file_write;
     sorted_list* temp = head->next;
-    while(temp !=NULL)
+
+    if ((file_write = fopen(file_name, "w")) != NULL)
     {
-        printf("%s\n", temp->text);
-        temp = temp->next;
+        while(temp !=NULL)
+        {
+            fprintf(file_write, "%s\n", temp->text);
+            temp = temp->next;
+        }
+        fclose(file_write);
+    }
+    else
+    {
+        printf("%s\n", OUTPUT_FILE_CANNOT_BE_OPENED);
     }
 }

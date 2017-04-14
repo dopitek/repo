@@ -62,5 +62,4 @@ void dealloc_stack(stack* head)
     }
 
     free(head);
-    head = NULL;
 }

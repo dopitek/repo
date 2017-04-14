@@ -3,13 +3,10 @@
 
 int main(int argc, char** argv)
 {
-    model model_instance = initialize_model();
-    menu(argc, argv, &model_instance);
-    if (model_instance.valid)
+    model model_t = menu(argc, argv);
+    if (model_t.valid)
     {
-       process(model_instance);
+       process(model_t);
     }
-
-    //read("test.txt", "m");
     return 0;
 }

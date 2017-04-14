@@ -11,7 +11,6 @@ char* read_line(FILE* file)
     char *buffer = calloc(line_size+1, sizeof(char));
     int length = 0;
     char ch = getc(file);
-
     while ((ch != '\n') && (ch != EOF))
     {
         buffer[length] = ch;

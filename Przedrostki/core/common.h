@@ -11,7 +11,4 @@ typedef struct
     bool valid;
 } model;
 
-model initialize_model();
-void destroy_model(model model_instance);
-
 #endif

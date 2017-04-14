@@ -3,9 +3,6 @@
 #include <ctype.h>
 #include "stringext.h"
 
-
-
-
 int strcmp_ignore_case(char const *a, char const *b)
 {
     for (;; a++, b++) {
