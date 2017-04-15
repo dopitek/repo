@@ -37,7 +37,7 @@ void process_line(char *line, char* prefix, sorted_list* results)
     stack* words;
     stack* words_with_prefix;
     char* element;
-    char* delimiter = " ,.:\r!?\"";
+    char* delimiter = " ,.:;\r!?\"(){}";
 
     words = split(line, delimiter);
     words_with_prefix = select_many_with_prefix(&words, prefix);
@@ -49,3 +49,4 @@ void process_line(char *line, char* prefix, sorted_list* results)
     dealloc_stack(words_with_prefix);
     free(line);
 }
+

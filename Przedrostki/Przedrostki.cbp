@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-i test.txt -o outttt.txt -p pr" />
+				<Option parameters="-i pan_tadeusz.txt -o nowy1.txt -p świę" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
