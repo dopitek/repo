@@ -12,6 +12,4 @@ void push(stack** head, char* object);
 char* pop(stack** head);
 void dealloc_stack(stack* head);
 
-void print_stack(stack* head);
-
 #endif

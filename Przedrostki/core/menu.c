@@ -35,12 +35,13 @@ model menu(int argc, char ** argv)
     return model_t;
 }
 
-int validate_input(model model_t)
+int check_for_null(char *string, char *error_message)
 {
-    if (validate_prefix_parameter(model_t.prefix) != 0) return -1;
-    if (validate_input_file_parameter(model_t.in_filename) != 0) return -1;
-    if (validate_output_file_parameter(model_t.out_filename) != 0) return -1;
-
+    if (string == NULL)
+    {
+        printf("%s\n", error_message);
+        return -1;
+    }
     return 0;
 }
 
@@ -69,12 +70,15 @@ int validate_output_file_parameter(char * output_file_name)
     return 0;
 }
 
-int check_for_null(char *string, char *error_message)
+
+
+int validate_input(model model_t)
 {
-    if (string == NULL)
-    {
-        printf("%s\n", error_message);
-        return -1;
-    }
+    if (validate_prefix_parameter(model_t.prefix) != 0) return -1;
+    if (validate_input_file_parameter(model_t.in_filename) != 0) return -1;
+    if (validate_output_file_parameter(model_t.out_filename) != 0) return -1;
+
     return 0;
 }
+
+

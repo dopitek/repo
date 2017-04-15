@@ -38,16 +38,6 @@ char* pop(stack** head)
     return NULL;
 }
 
-void print_stack(stack* head)
-{
-    stack* temp = head;
-    while(temp->next != NULL)
-    {
-        printf("%s\n",temp->object);
-        temp = temp->next;
-    }
-}
-
 void dealloc_stack(stack* head)
 {
 
